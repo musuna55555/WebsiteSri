@@ -1,0 +1,275 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 78%;
+  margin-top: -30px;
+  z-index: -1;
+}
+.wrapper section {
+  width: calc(100% / 3);
+  height: 100%;
+  float: left;
+  filter: grayscale(50%);
+  transition-duration: 0.5s;
+  position: relative;
+  pointer-events: all;
+}
+.wrapper section::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.397), transparent);
+  opacity: 1;
+  transition: 0.3s;
+}
+.wrapper section.sec01 {
+  background: url("../img/Petani-membajak-sawah-dengan-kerbau.JPG");
+}
+.wrapper section.sec02 {
+  background: url("../img/rawatsapi.jpeg");
+}
+.wrapper section.sec03 {
+  background: url("../img/nangkapikan.jpg");
+}
+.wrapper section.sec01,
+.wrapper section.sec02,
+.wrapper section.sec03 {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.wrapper:hover section:hover {
+  width: 40%;
+  filter: grayscale(0%);
+}
+.wrapper:hover section:hover::before {
+  opacity: 0;
+}
+.wrapper:hover section:not(:hover) {
+  width: 30%;
+}
+
+.alternative {
+  top: 30%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+
+  letter-spacing: 0.08em;
+
+  font-family: "Poppins", sans-serif;
+  margin-top: -50px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 100px;
+  text-shadow: 4px 5px 4px #9c9c9c;
+}
+
+a.navbar-brand.navbar-link {
+  margin-top: 7px;
+  z-index: 1;
+}
+
+ul.nav.navbar-nav.navbar-right {
+  margin-top: 12px;
+  margin-right: 18px;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+  color: #363535;
+  background-color: #e7e7e7;
+}
+
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover {
+  color: #dad9d9;
+  background-color: transparent;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #ffffff;
+}
+
+.navbar-brand,
+.navbar-nav > li > a {
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .open > a {
+  background-repeat: repeat-x;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+  background-color: #ddd;
+  background: white;
+}
+
+button.navbar-toggle.collapsed {
+  margin-top: 16px;
+  margin-right: 52px;
+}
+
+nav.navbar.navbar-default {
+  height: 100px;
+  background: none;
+  box-shadow: none;
+  border: none;
+  padding-top: 50px;
+  padding-left: 120px;
+  padding-right: 75px;
+  position: absolute;
+}
+
+a:link {
+  text-decoration: none;
+}
+a:hover {
+  font-weight: bold;
+}
+
+.navbar-header a.navbar-brand img {
+  height: 30px;
+  margin-top: -4px;
+}
+
+.navbar-nav > li > a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+i.glyphicon.glyphicon-search {
+  font-size: 20px;
+  color: rgb(184, 182, 182);
+}
+
+#background {
+  margin-top: -120px;
+  background: url(../../assets/img/Screenshot.png) no-repeat;
+  background-size: cover;
+  padding-top: 111px;
+  height: 638px;
+  max-height: 1112px;
+}
+
+#background .jumbotron {
+  background: none;
+  margin-left: 137px;
+  max-width: 1000px;
+  margin-top: 22px;
+}
+
+#background .jumbotron h1 {
+  font-family: nexa;
+  color: white;
+  margin-bottom: -12px;
+}
+
+#background .jumbotron p {
+  font-family: raleway;
+  color: white;
+  margin-bottom: -12px;
+  margin-top: 27px;
+  padding-right: 307px;
+}
+
+#home {
+  text-align: center;
+}
+
+#home .container h1 {
+  margin: 36px;
+}
+
+#home .container .row {
+  margin: -3px;
+}
+
+#home .isi .container.atas {
+  background-color: #f9f8f8;
+  margin-top: -85px;
+  padding-bottom: 37px;
+}
+
+.glyphicon {
+  position: relative;
+  font-size: 42px;
+  color: #27475e;
+}
+
+.container.bawah {
+  text-align: center;
+}
+
+#news {
+  margin-top: 31px;
+  background-color: #f9f8f8;
+  padding-top: 43px;
+  padding-bottom: 25px;
+}
+
+#gallery .container h1 {
+  text-align: center;
+  font-family: raleway;
+  margin-bottom: 38px;
+}
+
+#gallery .container .row #dua.col-lg-6.col-md-6.col-sm-6.col-xs-6 {
+  padding-top: 31px;
+}
+
+#about {
+  background-color: #102128;
+  margin-top: 79px;
+  color: white;
+}
+
+#about .container {
+  width: 100%;
+  padding: 55px;
+}
+
+#about .container.footer .col-lg-6.col-md-6.col-sm-12.col-xs-12 {
+  font-family: petitamedium;
+  color: #eee;
+}
+
+.input-group.input-group-lg {
+  margin-top: 23px;
+}
+
+#icon {
+  color: white;
+  font-size: 37px;
+  margin-top: 20px;
+  position: static;
+}
+
+#icon i.fa.fa-facebook-official {
+  margin-left: 17px;
+}
+
+#icon i.fa.fa-twitter-square {
+  margin-left: 17px;
+}
+
+#icon i.fa.fa-youtube-play {
+  margin-left: 17px;
+}
+
+#kaki {
+  color: rgb(196, 196, 196);
+  background-color: #0f1517;
+}

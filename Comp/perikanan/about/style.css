@@ -1,0 +1,27 @@
+.nav-item {
+  margin-left: 50px;
+}
+
+#home {
+  margin-left: 650px;
+}
+
+h1 {
+  font-size: 8.5em;
+  color: white;
+  padding-top: 30px;
+  text-shadow: 2px 2px 5px black;
+}
+
+h2 {
+  padding-top: 20px;
+}
+
+.gamkel1 img,
+.gamkel2 img {
+  box-shadow: 0 13px 16px rgba(0, 0, 0, 0.16), 0 13px 16px rgba(0, 0, 0, 0.23);
+}
+
+section {
+  min-height: 540px;
+}
